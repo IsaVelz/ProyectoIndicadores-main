@@ -1,0 +1,319 @@
+[
+  {
+    "ContainingType": "PIndicadores.Controllers.EntidadesController",
+    "Method": "ObtenerRaiz",
+    "RelativePath": "",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PIndicadores.Controllers.EntidadesController",
+    "Method": "Listar",
+    "RelativePath": "api/{nombreProyecto}/{nombreTabla}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nombreProyecto",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "nombreTabla",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PIndicadores.Controllers.EntidadesController",
+    "Method": "Crear",
+    "RelativePath": "api/{nombreProyecto}/{nombreTabla}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nombreProyecto",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "nombreTabla",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "datosEntidad",
+        "Type": "System.Collections.Generic.Dictionary\u00602[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PIndicadores.Controllers.EntidadesController",
+    "Method": "ObtenerPorClave",
+    "RelativePath": "api/{nombreProyecto}/{nombreTabla}/{nombreClave}/{valor}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nombreProyecto",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "nombreTabla",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "nombreClave",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "valor",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PIndicadores.Controllers.EntidadesController",
+    "Method": "Actualizar",
+    "RelativePath": "api/{nombreProyecto}/{nombreTabla}/{nombreClave}/{valorClave}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nombreProyecto",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "nombreTabla",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "nombreClave",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "valorClave",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "datosEntidad",
+        "Type": "System.Collections.Generic.Dictionary\u00602[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PIndicadores.Controllers.EntidadesController",
+    "Method": "Eliminar",
+    "RelativePath": "api/{nombreProyecto}/{nombreTabla}/{nombreClave}/{valorClave}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nombreProyecto",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "nombreTabla",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "nombreClave",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "valorClave",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PIndicadores.Controllers.EntidadesController",
+    "Method": "EjecutarConsultaParametrizada",
+    "RelativePath": "api/{nombreProyecto}/{nombreTabla}/ejecutar-consulta-parametrizada",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cuerpoSolicitud",
+        "Type": "System.Text.Json.JsonElement",
+        "IsRequired": true
+      },
+      {
+        "Name": "nombreProyecto",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "nombreTabla",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PIndicadores.Controllers.EntidadesController",
+    "Method": "EjecutarProcedimientoAlmacenado",
+    "RelativePath": "api/{nombreProyecto}/{nombreTabla}/ejecutar-procedimiento/{procedureName}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "procedureName",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "body",
+        "Type": "System.Text.Json.JsonElement",
+        "IsRequired": true
+      },
+      {
+        "Name": "nombreProyecto",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "nombreTabla",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PIndicadores.Controllers.EntidadesController",
+    "Method": "ValidarToken",
+    "RelativePath": "api/{nombreProyecto}/{nombreTabla}/validar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nombreProyecto",
+        "Type": "",
+        "IsRequired": true
+      },
+      {
+        "Name": "nombreTabla",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PIndicadores.Controllers.EntidadesController",
+    "Method": "VerificarContrasena",
+    "RelativePath": "api/{nombreProyecto}/{nombreTabla}/verificar-contrasena",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nombreProyecto",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "nombreTabla",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "datos",
+        "Type": "System.Collections.Generic.Dictionary\u00602[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PIndicadores.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "login",
+        "Type": "PIndicadores.Models.LoginModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PIndicadores.Controllers.AuthController",
+    "Method": "ObtenerRolesPorUsuario",
+    "RelativePath": "api/Auth/obtener-roles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PIndicadores.Controllers.IndicadorController",
+    "Method": "GuardarIndicadores",
+    "RelativePath": "api/Indicador",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "guardarIndicador",
+        "Type": "PIndicadores.Models.GuardarIndicador",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PIndicadores.Controllers.ProtectedController",
+    "Method": "GetProtectedData",
+    "RelativePath": "api/Protected",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

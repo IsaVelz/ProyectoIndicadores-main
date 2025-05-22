@@ -1,0 +1,6 @@
+@PIndicadores_HostAddress = http://localhost:5160
+
+GET {{PIndicadores_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
